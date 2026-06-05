@@ -1,5 +1,19 @@
 ﻿# Windows 启动项清理工具（图形界面版）
 
+## 下载安装包
+
+在 GitHub 仓库首页直接下载这个文件：
+
+```text
+WindowsStartupCleaner-Installer.zip
+```
+
+下载后：
+
+1. 右键压缩包，选择“全部解压”。
+2. 双击解压后的 `Install-StartupCleaner.bat`。
+3. 安装完成后，桌面会出现“开机启动项清理工具”快捷方式。
+4. 如果禁用启动项时提示权限不足，请右键桌面快捷方式，选择“以管理员身份运行”。
 这是一个适合代码小白使用的 Windows 开机自启动识别/清理工具。
 
 它会识别开机自启动项和当前高内存进程，并把启动项分成：
@@ -68,3 +82,4 @@ powershell -ExecutionPolicy Bypass -File .\StartupCleaner.ps1 -Restore
 ## 安全说明
 
 工具默认先扫描，不会自动乱禁用。图形界面会阻止你禁用 `KEEP` 项；对 `REVIEW` 项会再次提醒确认。禁用前会保存备份，方便恢复。
+
